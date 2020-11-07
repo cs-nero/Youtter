@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Youtter",
+  "author": "Indogermane",
+  "version": "1.0.1",
+  "description": "Redirect YouTube-URLs to a custom Yotter instance without sending a bit to YouTube.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "options_ui": {
+  "page": "options/options.html"
+  },
+  
+  "icons": {
+  "800": "icons/Icon.png"
+},
+
+  "browser_action": {
+    "browser_style": true,
+	"default_icon": "icons/yotter.png"
+  },
+  
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.youtube.com/*",
+    "*://*.youtu.be/*",
+	"storage"
+  ],
+  
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "Youtter@Indogermane",
+    "strict_min_version": "57.0"
+  }
+}
+
+}
