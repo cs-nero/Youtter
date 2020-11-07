@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <style>
+  p {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  }
+  </style>
+    <meta charset="utf-8">
+  </head>
+  <body bgcolor="202023">
+    <form>
+      <p><br>
+        <label>Instance: 
+          <input list="Instanzliste" name="Instanzauswahl" id="instance" placeholder="yotter.xyz"/>
+		  <datalist id="Instanzliste">
+		  <option value="yotter.xyz">
+		  <option value="yotter.kavin.rocks">
+		  <option value="yotter.jank.media">
+		  </datalist>
+        </label>
+        <button type="submit">Save</button>
+		<br><br><br>For a list of public instances click <a href="https://github.com/ytorg/Yotter#public-instances">here.</a>
+		<br><br><br><br><br>
+      </p>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
